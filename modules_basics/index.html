@@ -9,7 +9,14 @@
 	<ul id="users"></ul>
 	<input type="text" id="input" placeholder="new user">
 	<button id="submit">Submit</button>
+	<script src="App.js"></script>
 	<script src="users.js"></script>
 	<script src="dom.js"></script>
 </body>
 </html>
+
+<!-- using script tags will just add all the variables and functions
+from other files into the global namespace, everything will 
+be sitting in the same file.
+with modules we can avoid exposing local variables to global
+-->
