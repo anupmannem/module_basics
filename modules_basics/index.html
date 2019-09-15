@@ -9,9 +9,7 @@
 	<ul id="users"></ul>
 	<input type="text" id="input" placeholder="new user">
 	<button id="submit">Submit</button>
-	<script src="App.js"></script>
-	<script src="users.js"></script>
-	<script src="dom.js"></script>
+	<script src="bundle.js"></script>
 </body>
 </html>
 
@@ -23,3 +21,11 @@ with modules we can avoid exposing local variables to global
 
 <!-- with IIFE pattern we can avoid polluting the global
 scope with all the functions-->
+
+<!-- order of the script files matter, use commonjs module
+system to hide every file in a scope, and allow only exporting
+what is required
+cons - 
+	browsers dont support commonjs out of the box
+	it loads modules synchronously
+-->
