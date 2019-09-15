@@ -9,7 +9,7 @@
 	<ul id="users"></ul>
 	<input type="text" id="input" placeholder="new user">
 	<button id="submit">Submit</button>
-	<script src="bundle.js"></script>
+	<script type="module" src="dom.js"></script>
 </body>
 </html>
 
@@ -29,3 +29,7 @@ cons -
 	browsers dont support commonjs out of the box
 	it loads modules synchronously
 -->
+
+<!-- ES module: support asynchronous, import keyword for require 
+supports named import { name } from <file>
+supports default export-->
